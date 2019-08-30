@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".PruebasBD.ScannerActivity">
+
+   <EditText
+       android:id="@+id/txtCodigoBarra"
+       android:layout_width="248dp"
+       android:layout_height="36dp"
+       android:hint="codigo" />
+
+   <Button
+       android:id="@+id/btnCapturar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:onClick="Scanner"
+       android:text="Capturar codigos "/>
+
+   <Button
+       android:id="@+id/btnEnviar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:onClick="Scanner"
+       android:text="Enviar codigo "/>
+
+   <TextView
+
+       android:id="@+id/tvprueba"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:text="hola"
+       android:textColor="@color/colorPrimary"/>
+
+   <TextView
+
+       android:id="@+id/txRecibDCamara"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:text="reciboDcamara"
+       android:textColor="@color/colorPrimary"/>
+
+
+
+
+</LinearLayout>

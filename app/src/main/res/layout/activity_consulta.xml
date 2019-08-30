@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PruebasBD.ConsultaActivity">
+
+    <Button
+        android:id="@+id/btnBuscar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="21dp"
+        android:onClick="onClick"/>
+
+    <EditText
+        android:id="@+id/texDocumento"
+        android:layout_width="237dp"
+        android:layout_height="42dp"
+        android:hint="documento"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <EditText
+        android:id="@+id/texNombre"
+        android:layout_width="332dp"
+        android:layout_height="44dp"
+        android:hint="nombre"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <EditText
+        android:id="@+id/textNivelAcceso"
+        android:layout_width="330dp"
+        android:layout_height="42dp"
+        android:hint="nivel acceso"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:text="Eliminar"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="221dp"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:text="Actualizar"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="223dp"
+        android:onClick="onClick"/>
+</LinearLayout>

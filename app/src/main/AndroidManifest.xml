@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wmiltos.inveglobal_droid">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".principal.ventanas.StockAutomaticoActivity"></activity>
+        <activity android:name=".PruebasBD.PruebaTabsActivity" />
+        <activity android:name=".PruebasBD.ResScannerActivity" />
+        <activity android:name=".PruebasBD.ScannerActivity" />
+        <activity
+            android:name=".PruebasBD.UbicarBD_Activity"
+            android:label="@string/title_activity_ubicar_bd_" />
+        <activity android:name=".PruebasBD.PermisoActivity" />
+        <activity android:name=".PruebasBD.GuardarDatosActivity" />
+        <activity android:name=".PruebasBD.NumberPickerActivity" />
+        <activity android:name=".principal.subVentanas.LimpiarActivity" />
+        <activity android:name=".principal.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PruebasBD.RegistroActivity" />
+        <activity android:name=".PruebasBD.ConsultaActivity" />
+        <activity android:name=".principal.ventanas.UbicacionActivity" />
+        <activity android:name=".principal.ventanas.LecturasActivity" />
+        <activity android:name=".principal.ventanas.StockActivity" />
+        <activity android:name=".PruebasBD.RegistroLecturasActivity" />
+        <activity android:name=".PruebasBD.ConsultaLecturaActivity" />
+        <activity android:name=".PruebasBD.archivosActivity" />
+        <activity android:name=".principal.subVentanas.GeneraArchivoActivity" />
+        <activity android:name=".principal.login.LoginValidacionActivity" />
+        <activity android:name=".principal.subVentanas.VisualizarRegistroActivity" />
+        <activity android:name=".PruebasBD.SimpleScannerActivity" />
+    </application>
+
+</manifest>

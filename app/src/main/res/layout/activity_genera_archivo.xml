@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".principal.subVentanas.GeneraArchivoActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCampoCantidadRegistrosG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Nro.Lecturas"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <Button
+            android:id="@+id/btn_generaArchivo"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:onClick="generarArchivo"
+            android:text="GENERAR ARCHIVO"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="150dp">
+
+         <Button
+             android:id="@+id/btn_verListado"
+             style="?android:textAppearanceSmall"
+             android:layout_width="match_parent"
+             android:layout_height="99dp"
+             android:layout_marginTop="25dp"
+             android:onClick="Click_verListado"
+             android:text="VER LISTADO"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+     </LinearLayout>
+
+     Login progress
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="99dp">
+
+
+         <Button
+             android:id="@+id/btn_volver"
+             style="?android:textAppearanceSmall"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="25dp"
+             android:onClick="clickVolver"
+             android:text="volver"
+             android:textColor="#389136"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+     </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:id="@+id/text_nombreEquipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Nombre del Equipo"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+</LinearLayout>

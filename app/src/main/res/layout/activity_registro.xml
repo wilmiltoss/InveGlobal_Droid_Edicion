@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PruebasBD.RegistroActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO DE USUARIOS"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/campoIdUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id. Usuario"/>
+
+    <EditText
+        android:id="@+id/campoNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"/>
+
+    <EditText
+        android:id="@+id/campoNivelAcceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nivel Acceso"/>
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeActionId="6"
+        android:text="Registrar Usuario"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:layout_marginTop="30dp"
+        android:singleLine="true"
+        android:onClick="onClickRegistrar"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PruebasBD.archivosActivity">
+
+
+    <Button
+        android:id="@+id/leermeminterna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="182dp"
+        android:text="Leer memoria interna" />
+
+    <Button
+        android:id="@+id/escribirmeminterna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/leermeminterna"
+        android:layout_marginStart="13dp"
+        android:text="Escribir archivo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="124dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/escribirsd"
+        android:layout_marginTop="22dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/escribirsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/escribirmeminterna"
+        android:layout_alignTop="@+id/leersd"
+        android:text="Escribir SD" />
+
+    <Button
+        android:id="@+id/leerprograma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        android:text="Leer Programa" />
+
+    <Button
+        android:id="@+id/leersd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="221dp"
+        android:layout_toEndOf="@+id/escribirmeminterna"
+        android:text="Leer SD" />
+
+    <Button
+        android:id="@+id/escrirArchivo"
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="93dp"
+        android:text="ESCRIBIR ARCHIVO SQL" />
+</RelativeLayout>

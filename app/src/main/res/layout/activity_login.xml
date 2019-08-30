@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/main_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".principal.login.LoginActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Ingrese su ID de Usuario"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+
+    <!-- Login progress -->
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp">
+
+                <EditText
+                    android:id="@+id/et_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Id Usuario..."
+                    android:imeActionId="6"
+                    android:maxLength="7"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_login"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:onClick="ingresar2"
+                android:text="@string/btn_login"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- <Button
+                 android:id="@+id/btn_adjuntarBD"
+                 style="?android:textAppearanceSmall"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="16dp"
+                 android:onClick="onClickMenu"
+                 android:text="Obtener Maestro"
+                 android:textColor="#389136"
+                 android:textSize="18sp"
+                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_registrarse"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="onClickMenu"
+                android:text="@string/btn_registrarse"
+                android:textColor="#389136"
+                android:textSize="18sp"
+                android:textStyle="bold" />-->
+
+             <Button
+                 android:id="@+id/btn_salir"
+                 style="?android:textAppearanceSmall"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="16dp"
+                 android:text="@string/btn_salir"
+                 android:textColor="#ff0000"
+                 android:textSize="18sp"
+                 android:textStyle="bold" />
+
+            <!--<Button
+               android:id="@+id/btn_consulta"
+               style="?android:textAppearanceSmall"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:onClick="onClickConsulta"
+               android:text="Consultar"
+               android:textColor="#389136"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <Button
+               android:id="@+id/btn_spinner"
+               style="?android:textAppearanceSmall"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:onClick="onClickConsultaSpinner"
+               android:text="Spinner"
+               android:textColor="#389136"
+               android:textSize="18sp"
+               android:textStyle="bold" />-->
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:text="Button"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+
+            <EditText
+                android:id="@+id/et_usuario2"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:textSize="1dp"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/et_validaTablaLectura"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:hint="0"
+                android:imeOptions="actionUnspecified"
+                android:singleLine="true"
+                android:textSize="1dp" />
+
+         </LinearLayout>
+     </ScrollView>
+ </LinearLayout>

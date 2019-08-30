@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PruebasBD.RegistroLecturasActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO DE LECTURAS"
+        android:textSize="10sp"
+        android:textStyle="bold"
+    />
+
+    <EditText
+        android:id="@+id/campoIdlocacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id. locacion"
+        android:textSize="10dp"/>
+
+    <EditText
+        android:id="@+id/campoNroConteo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NroConteo"
+        android:textSize="10dp"/>
+
+    <EditText
+        android:id="@+id/campoIdSoporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IdSoporte"
+        android:textSize="10dp"/>
+    <EditText
+        android:id="@+id/campoNroSoporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NroSoporte"
+        android:textSize="10dp"/>
+    <EditText
+        android:id="@+id/campoIdLetraSoporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IdLetraSoporte"
+        android:textSize="10dp"/>
+    <EditText
+        android:id="@+id/campoNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nivel"
+        android:textSize="10dp"/>
+    <EditText
+        android:id="@+id/campoMetro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Metro"
+        android:textSize="10dp"/>
+    <EditText
+        android:id="@+id/campoScanning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Scanning"
+        android:textSize="10dp"/>
+    <EditText
+        android:id="@+id/campoCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        />
+    <EditText
+        android:id="@+id/campoIdUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IdUsuario"/>
+
+
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeActionId="6"
+        android:text="Registrar Usuario"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:layout_marginTop="0dp"
+        android:singleLine="true"
+        android:onClick="onClickRegistrar"/>
+
+</LinearLayout>

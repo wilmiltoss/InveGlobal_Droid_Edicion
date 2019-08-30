@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".principal.ventanas.LecturasActivity">
+
+
+    <!-- Login progress -->
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtConteo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryNegro"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/txtLocacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="locación: "
+            android:textColor="@color/colorPrimaryNegro"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/txtTipoSoporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Tipo Soporte: "
+            android:textColor="@color/colorPrimaryNegro"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/txtMetro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Metro : "
+            android:textColor="@color/colorPrimaryNegro"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:hint="Nivel : "
+            android:textColor="@color/colorPrimaryNegro"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp">
+
+
+            <TextView
+                android:id="@+id/txtScanning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Scanning             "
+                android:textColor="@color/colorPrimaryNegro"/>
+
+            <Button
+                android:id="@+id/btn_ConteoRapido"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:background="@drawable/btn_color"
+                android:onClick="onClickConteoRapido"
+                android:text="Conteo +1"
+                android:textColor="@color/colorVerde" />
+
+        </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/et_panelNormal"
+               android:layout_width="282dp"
+               android:layout_height="wrap_content"
+               android:paddingLeft="10dp"
+               android:paddingTop="0dp"
+               app:counterEnabled="true"
+               app:counterMaxLength="13">
+
+               <EditText
+                   android:id="@+id/et_scanningLectura"
+                   android:layout_width="256dp"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/stylo_borde"
+                   android:inputType="phone"
+                   android:maxLength="20" />
+           </android.support.design.widget.TextInputLayout>
+
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/et_panelRapido"
+               android:layout_width="282dp"
+               android:layout_height="wrap_content"
+               android:paddingLeft="10dp"
+               android:paddingTop="0dp"
+               app:counterEnabled="true"
+               app:counterMaxLength="13">
+
+               <EditText
+                   android:id="@+id/et_scanningLecturaRapida"
+                   android:layout_width="256dp"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="@color/colorVerdeClaro"
+                   android:background="@drawable/stylo_borde"
+                   android:inputType="phone"
+                   android:maxLength="20"
+                   android:textColor="@color/colorPrimaryNegro"/>
+           </android.support.design.widget.TextInputLayout>
+
+
+
+   </RelativeLayout>
+
+
+       <android.support.design.widget.BottomNavigationView
+           android:id="@+id/navigation2"
+           android:layout_width="69dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="0dp"
+           android:layout_marginEnd="0dp"
+           android:background="?android:attr/windowBackground"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:menu="@menu/navigation2" />
+
+       <!-- <ImageButton
+        android:id="@+id/btn_Scanner"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="41dp"
+        android:layout_height="59dp"
+        android:background="@color/colorTransparente"
+        android:onClick="Scanner"
+        android:scaleType="centerInside"
+        android:src="@drawable/barcode_scanner"
+        android:text="" />-->
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp">
+
+        <Button
+            android:id="@+id/btn_buscar"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onClickBuscar"
+            android:text="Buscar"
+            android:textColor="@color/colorPrimaryNegro" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1dp">
+
+        <TextView
+            android:id="@+id/tvNroLecturasL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="1dp"
+            android:hint="Nro.Lecturas"
+            android:paddingTop="15dp"
+            android:textColor="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="1dp">
+
+
+        <TextView
+            android:id="@+id/tvRnroLocacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="1dp"
+            android:text="Rlocac"
+            android:textColor="@color/colorTransparente"/>
+        <TextView
+            android:id="@+id/tvRconteo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="1dp"
+            android:text="Rconteo"
+            android:textColor="@color/colorTransparente"/>
+        <TextView
+            android:id="@+id/tvRsoporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="1dp"
+            android:text="Rsoport"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tvRnivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="1dp"
+            android:text="Rnivel"
+            android:textColor="@color/colorTransparente"/>
+        <TextView
+            android:id="@+id/tvRmetro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="1dp"
+            android:text="Rmetro"
+            android:textColor="@color/colorTransparente"/>
+        <TextView
+            android:id="@+id/tvRnroSoporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="2dp"
+            android:text="RnroSoporte"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tv_Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="1dp"
+            android:text=""
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tv_scanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="1dp"
+            android:text=""
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/navigation" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+ </ScrollView>
+
+
+
+</LinearLayout>
